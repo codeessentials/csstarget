@@ -171,6 +171,63 @@ menu {
   color: inherit;
 }
 
+/* line 147, assets/stylesheets/layout/_core.scss */
+.forkme {
+  top: 3px;
+  left: 0;
+  width: 138px;
+  height: 136px;
+  position: absolute;
+  text-indent: -99999px;
+  background: url("fork.png");
+}
+
+/* line 156, assets/stylesheets/layout/_core.scss */
+.like {
+  top: 40px;
+  left: 150px;
+  color: #ffffff;
+  position: absolute;
+  padding: 10px 20px;
+  background: #B0AAC4;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  animation-name: like;
+  animation-duration: 0.6s;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0;
+  -webkit-animation-name: like;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: 100;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0;
+}
+/* line 181, assets/stylesheets/layout/_core.scss */
+.like:before {
+  top: 50%;
+  left: -8px;
+  content: "";
+  margin-top: -8px;
+  position: absolute;
+  border-right: 8px solid #B0AAC4;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+@keyframes like {
+  0% {
+    left: 165px;
+  }
+  100% {
+    left: 150px;
+  }
+}
 /* line 4, assets/stylesheets/core/_reset.scss */
 * {
   padding: 0;
