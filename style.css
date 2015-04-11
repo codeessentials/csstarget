@@ -28,10 +28,10 @@ body {
 /* line 30, assets/stylesheets/layout/_core.scss */
 .btn {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   background: #48C9B0;
-  padding: 10px 15px;
+  padding: 10px 18px;
   margin-right: 10px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
