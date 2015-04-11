@@ -140,6 +140,20 @@ html {
   animation: shake 1s;
 }
 
+/* line 15, assets/stylesheets/core/_modal.scss */
+#zoom:target {
+  -moz-animation: zoom 0.5s;
+  -webkit-animation: zoom 0.5s;
+  animation: zoom 0.5s;
+}
+
+/* line 16, assets/stylesheets/core/_modal.scss */
+#zoom-id:target {
+  -moz-animation: zoomID 1s;
+  -webkit-animation: zoomID 1s;
+  animation: zoomID 1s;
+}
+
 @keyframes bounce {
   0%, 20%, 40%, 60%, 80%, 100% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -212,5 +226,47 @@ html {
   }
   20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomID {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+@-webkit-keyframes zoomID {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }

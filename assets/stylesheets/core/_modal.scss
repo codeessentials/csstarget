@@ -10,5 +10,7 @@
 }
 
 // Animations style
-#bounce:target { @include animation( bounce 1s ); }
-#shake:target { @include animation( shake 1s ); }
+#bounce:target  { @include animation( bounce 1s ); }
+#shake:target   { @include animation( shake 1s ); }
+#zoom:target 	{ @include animation( zoom 0.5s ); }
+#zoom-id:target { @include animation( zoomID 1s ); }
