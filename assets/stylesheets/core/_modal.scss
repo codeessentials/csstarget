@@ -1,0 +1,18 @@
+// modal'
+.modal {
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	background: #9B59B6;
+	margin: -175px 0 0 -250px;
+}
+
+// Animations style
+#bounce:target  { @include animation( bounce 1s ); }
+#shake:target   { @include animation( shake 1s ); }
+#zoom:target 	{ @include animation( zoom 0.5s ); }
+#zoom-id:target { @include animation( zoomID 1s ); }
+#flipx:target 	{ @include animation( flipx 1.5s ); }
+#flipy:target 	{ @include animation( flipy 1.5s ); }
