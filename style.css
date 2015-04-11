@@ -40,8 +40,12 @@ menu {
 .sep .container {
   min-height: 150px;
 }
+/* line 36, assets/stylesheets/layout/_core.scss */
+.sep:nth-child(2) {
+  background: #8E44AD;
+}
 
-/* line 39, assets/stylesheets/layout/_core.scss */
+/* line 40, assets/stylesheets/layout/_core.scss */
 .btn {
   color: #ffffff;
   font-size: 16px;
@@ -54,25 +58,25 @@ menu {
   border-radius: 5px;
 }
 
-/* line 48, assets/stylesheets/layout/_core.scss */
+/* line 49, assets/stylesheets/layout/_core.scss */
 .above-examples {
-  top: 20px;
+  top: 70px;
   color: #fff;
   bottom: 30px;
   width: 100%;
   display: block;
-  font-size: 25px;
-  padding-top: 55px;
+  font-size: 30px;
+  padding-top: 65px;
   text-align: center;
   position: relative;
 }
-/* line 59, assets/stylesheets/layout/_core.scss */
+/* line 60, assets/stylesheets/layout/_core.scss */
 .above-examples:before {
   top: 0;
   left: 48%;
   color: #fff;
   content: "▴";
-  font-size: 60px;
+  font-size: 65px;
   position: absolute;
   -moz-animation: click 0.6s;
   -webkit-animation: click 0.6s;
@@ -103,12 +107,12 @@ menu {
     top: 0px;
   }
 }
-/* line 96, assets/stylesheets/layout/_core.scss */
+/* line 97, assets/stylesheets/layout/_core.scss */
 .none {
   display: none;
 }
 
-/* line 97, assets/stylesheets/layout/_core.scss */
+/* line 98, assets/stylesheets/layout/_core.scss */
 :target {
   color: #fff;
   display: block;
@@ -117,7 +121,7 @@ menu {
   text-align: center;
 }
 
-/* line 105, assets/stylesheets/layout/_core.scss */
+/* line 106, assets/stylesheets/layout/_core.scss */
 .close {
   top: 10px;
   right: 10px;
@@ -134,9 +138,37 @@ menu {
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 119, assets/stylesheets/layout/_core.scss */
+/* line 120, assets/stylesheets/layout/_core.scss */
 .close:before {
   content: "x";
+}
+
+/* line 123, assets/stylesheets/layout/_core.scss */
+.illustration {
+  margin: 0 auto;
+  display: table;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* line 129, assets/stylesheets/layout/_core.scss */
+.avatar {
+  display: table;
+  font-size: 12px;
+  min-width: 140px;
+  line-height: 30px;
+  margin: 40px auto 10px auto;
+}
+/* line 136, assets/stylesheets/layout/_core.scss */
+.avatar img {
+  float: right;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 140, assets/stylesheets/layout/_core.scss */
+.avatar a {
+  color: inherit;
 }
 
 /* line 4, assets/stylesheets/core/_reset.scss */

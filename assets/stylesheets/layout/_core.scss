@@ -33,6 +33,7 @@ menu { text-align: center; }
 	min-height: 400px;
 	background: #E85040;
 	.container { min-height: 150px; }
+	&:nth-child(2) { background: #8E44AD; }
 }
 
 // core
@@ -46,13 +47,13 @@ menu { text-align: center; }
 	@include border-radius( 5px );
 }
 .above-examples {
-	top: 20px;
+	top: 70px;
 	color: #fff;
 	bottom: 30px;
 	width: 100%;
 	display: block;
-	font-size: 25px;
-	padding-top: 55px;
+	font-size: 30px;
+	padding-top: 65px;
 	text-align: center;
 	position: relative;
 	
@@ -61,7 +62,7 @@ menu { text-align: center; }
 		left: 48%;
 		color: #fff;
 		content: "▴";
-		font-size: 60px;
+		font-size: 65px;
 		position: absolute;
 		@include animation( click 0.6s  );
 		animation-iteration-count: 100;
@@ -118,3 +119,28 @@ menu { text-align: center; }
 
 	&:before { content: "x"; }
 }
+
+.illustration {
+	margin: 0 auto;
+	display: table;
+	font-size: 11px;
+	text-align: center;
+}
+.avatar {
+    display: table;
+    font-size: 12px;
+    min-width: 140px;
+    line-height: 30px;
+    margin: 40px auto 10px auto;
+
+	img { 
+		float: right;
+		@include border-radius(100px);	
+	}
+	a { color: inherit; }
+}
+
+
+
+
+
