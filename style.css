@@ -228,6 +228,14 @@ menu {
     left: 150px;
   }
 }
+@-webkit-keyframes like {
+  0% {
+    left: 165px;
+  }
+  100% {
+    left: 150px;
+  }
+}
 /* line 4, assets/stylesheets/core/_reset.scss */
 * {
   padding: 0;

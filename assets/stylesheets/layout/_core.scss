@@ -198,4 +198,12 @@ menu { text-align: center; }
   	left: 150px;
   }
 }
+@-webkit-keyframes like {
+  0% {
+    left: 165px;
+  }
+  100% {
+  	left: 150px;
+  }
+}
 
