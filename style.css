@@ -134,10 +134,10 @@ html {
 }
 
 /* line 14, assets/stylesheets/core/_modal.scss */
-#two:target {
-  -moz-animation: bounce 1s;
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
+#shake:target {
+  -moz-animation: shake 1s;
+  -webkit-animation: shake 1s;
+  animation: shake 1s;
 }
 
 @keyframes bounce {
@@ -190,5 +190,27 @@ html {
   100% {
     opacity: 1;
     transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
   }
 }

@@ -11,4 +11,4 @@
 
 // Animations style
 #bounce:target { @include animation( bounce 1s ); }
-#two:target { @include animation( bounce 1s ); }
+#shake:target { @include animation( shake 1s ); }
