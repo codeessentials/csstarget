@@ -1,4 +1,4 @@
-/* line 5, assets/stylesheets/layout/_core.scss */
+/* line 6, assets/stylesheets/layout/_core.scss */
 body {
   color: #666;
   font-size: 18px;
@@ -6,13 +6,13 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* line 11, assets/stylesheets/layout/_core.scss */
+/* line 12, assets/stylesheets/layout/_core.scss */
 .container {
   margin: 0 auto;
   max-width: 1100px;
 }
 
-/* line 18, assets/stylesheets/layout/_core.scss */
+/* line 19, assets/stylesheets/layout/_core.scss */
 #header {
   color: #294054;
   min-height: 120px;
@@ -25,7 +25,7 @@ body {
   box-shadow: 0 2px 5px #ddd;
 }
 
-/* line 30, assets/stylesheets/layout/_core.scss */
+/* line 31, assets/stylesheets/layout/_core.scss */
 .btn {
   color: #ffffff;
   font-size: 16px;
@@ -36,6 +36,42 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+/* line 40, assets/stylesheets/layout/_core.scss */
+.none {
+  display: none;
+}
+
+/* line 41, assets/stylesheets/layout/_core.scss */
+:target {
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  line-height: 300px;
+  text-align: center;
+}
+
+/* line 49, assets/stylesheets/layout/_core.scss */
+.close {
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 25px;
+  text-indent: 8px;
+  line-height: 36px;
+  position: absolute;
+  background: #F39C12;
+  text-align: center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 63, assets/stylesheets/layout/_core.scss */
+.close:before {
+  content: "x";
 }
 
 /* line 4, assets/stylesheets/core/_reset.scss */
@@ -77,4 +113,15 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+}
+
+/* line 2, assets/stylesheets/core/_modal.scss */
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background: #9B59B6;
+  margin: -150px 0 0 -250px;
 }

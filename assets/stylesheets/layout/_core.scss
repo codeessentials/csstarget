@@ -1,5 +1,6 @@
 // Core
 $color: #48C9B0;
+$close: #F39C12;
 
 
 body {
@@ -35,4 +36,29 @@ body {
 	padding: 10px 18px;
 	margin-right: 10px;
 	@include border-radius( 5px );
+}
+.none { display: none; }
+:target { 
+	color: #fff;
+	display: block; 
+	font-size: 30px;
+	line-height: 300px;
+	text-align: center;
+}
+
+.close {
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	color: #ffffff;
+	font-size: 25px;
+	text-indent: 8px;
+	line-height: 36px;
+	position: absolute;
+	background: $close;
+	text-align: center;
+	@include border-radius( 100px );
+
+	&:before { content: "x"; }
 }
