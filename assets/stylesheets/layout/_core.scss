@@ -21,13 +21,18 @@ body {
 	min-height: 120px;
 	line-height: 120px;
 	text-align: center;
-	margin-bottom: 30px;
 	background: #FFFFFF;
 	@include box-shadow( 0 2px 5px #ddd );
 }
 
-menu {
-	text-align: center
+menu { text-align: center; }
+
+// sep
+.sep {
+	padding: 30px 0;
+	min-height: 400px;
+	background: #E85040;
+	.container { min-height: 150px; }
 }
 
 // core
@@ -40,6 +45,54 @@ menu {
 	margin-right: 10px;
 	@include border-radius( 5px );
 }
+.above-examples {
+	top: 20px;
+	color: #fff;
+	bottom: 30px;
+	width: 100%;
+	display: block;
+	font-size: 25px;
+	padding-top: 55px;
+	text-align: center;
+	position: relative;
+	
+	&:before {
+		top: 0;
+		left: 48%;
+		color: #fff;
+		content: "▴";
+		font-size: 60px;
+		position: absolute;
+		@include animation( click 0.6s  );
+		animation-iteration-count: 100;
+		animation-direction: alternate;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+
+		-webkit-animation-iteration-count: 100;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: ease-out;
+		-webkit-animation-fill-mode: forwards;
+	}
+
+}
+@keyframes click {
+  0% {
+    top: -5px;
+  }
+  100% {
+  	top: 0px;
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    top: -5px;
+  }
+  100% {
+  	top: 0px;
+  }
+}
+
 .none { display: none; }
 :target { 
 	color: #fff;

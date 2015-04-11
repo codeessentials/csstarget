@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 6, assets/stylesheets/layout/_core.scss */
 body {
   color: #666;
@@ -18,19 +19,29 @@ body {
   min-height: 120px;
   line-height: 120px;
   text-align: center;
-  margin-bottom: 30px;
   background: #FFFFFF;
   -moz-box-shadow: 0 2px 5px #ddd;
   -webkit-box-shadow: 0 2px 5px #ddd;
   box-shadow: 0 2px 5px #ddd;
 }
 
-/* line 29, assets/stylesheets/layout/_core.scss */
+/* line 28, assets/stylesheets/layout/_core.scss */
 menu {
   text-align: center;
 }
 
-/* line 34, assets/stylesheets/layout/_core.scss */
+/* line 31, assets/stylesheets/layout/_core.scss */
+.sep {
+  padding: 30px 0;
+  min-height: 400px;
+  background: #E85040;
+}
+/* line 35, assets/stylesheets/layout/_core.scss */
+.sep .container {
+  min-height: 150px;
+}
+
+/* line 39, assets/stylesheets/layout/_core.scss */
 .btn {
   color: #ffffff;
   font-size: 16px;
@@ -43,12 +54,61 @@ menu {
   border-radius: 5px;
 }
 
-/* line 43, assets/stylesheets/layout/_core.scss */
+/* line 48, assets/stylesheets/layout/_core.scss */
+.above-examples {
+  top: 20px;
+  color: #fff;
+  bottom: 30px;
+  width: 100%;
+  display: block;
+  font-size: 25px;
+  padding-top: 55px;
+  text-align: center;
+  position: relative;
+}
+/* line 59, assets/stylesheets/layout/_core.scss */
+.above-examples:before {
+  top: 0;
+  left: 48%;
+  color: #fff;
+  content: "▴";
+  font-size: 60px;
+  position: absolute;
+  -moz-animation: click 0.6s;
+  -webkit-animation: click 0.6s;
+  animation: click 0.6s;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 100;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes click {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* line 96, assets/stylesheets/layout/_core.scss */
 .none {
   display: none;
 }
 
-/* line 44, assets/stylesheets/layout/_core.scss */
+/* line 97, assets/stylesheets/layout/_core.scss */
 :target {
   color: #fff;
   display: block;
@@ -57,7 +117,7 @@ menu {
   text-align: center;
 }
 
-/* line 52, assets/stylesheets/layout/_core.scss */
+/* line 105, assets/stylesheets/layout/_core.scss */
 .close {
   top: 10px;
   right: 10px;
@@ -74,7 +134,7 @@ menu {
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 66, assets/stylesheets/layout/_core.scss */
+/* line 119, assets/stylesheets/layout/_core.scss */
 .close:before {
   content: "x";
 }
@@ -128,7 +188,7 @@ html {
   height: 300px;
   position: absolute;
   background: #9B59B6;
-  margin: -150px 0 0 -250px;
+  margin: -175px 0 0 -250px;
 }
 
 /* line 13, assets/stylesheets/core/_modal.scss */
