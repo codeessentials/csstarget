@@ -1,0 +1,80 @@
+/* line 5, assets/stylesheets/layout/_core.scss */
+body {
+  color: #666;
+  font-size: 18px;
+  background: #EFEFED;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* line 11, assets/stylesheets/layout/_core.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* line 18, assets/stylesheets/layout/_core.scss */
+#header {
+  color: #294054;
+  min-height: 120px;
+  line-height: 120px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  -moz-box-shadow: 0 2px 5px #ddd;
+  -webkit-box-shadow: 0 2px 5px #ddd;
+  box-shadow: 0 2px 5px #ddd;
+}
+
+/* line 30, assets/stylesheets/layout/_core.scss */
+.btn {
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  background: #48C9B0;
+  padding: 10px 15px;
+  margin-right: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 4, assets/stylesheets/core/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, assets/stylesheets/core/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 16, assets/stylesheets/core/_reset.scss */
+after, hgroup:after, nav:after, footer:after, header:after, section:after, div:after, ol:after, ul:after, li:after, dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 24, assets/stylesheets/core/_reset.scss */
+a {
+  color: inherit;
+}
+
+/* line 25, assets/stylesheets/core/_reset.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
