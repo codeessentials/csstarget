@@ -25,7 +25,12 @@ body {
   box-shadow: 0 2px 5px #ddd;
 }
 
-/* line 31, assets/stylesheets/layout/_core.scss */
+/* line 29, assets/stylesheets/layout/_core.scss */
+menu {
+  text-align: center;
+}
+
+/* line 34, assets/stylesheets/layout/_core.scss */
 .btn {
   color: #ffffff;
   font-size: 16px;
@@ -38,12 +43,12 @@ body {
   border-radius: 5px;
 }
 
-/* line 40, assets/stylesheets/layout/_core.scss */
+/* line 43, assets/stylesheets/layout/_core.scss */
 .none {
   display: none;
 }
 
-/* line 41, assets/stylesheets/layout/_core.scss */
+/* line 44, assets/stylesheets/layout/_core.scss */
 :target {
   color: #fff;
   display: block;
@@ -52,7 +57,7 @@ body {
   text-align: center;
 }
 
-/* line 49, assets/stylesheets/layout/_core.scss */
+/* line 52, assets/stylesheets/layout/_core.scss */
 .close {
   top: 10px;
   right: 10px;
@@ -69,7 +74,7 @@ body {
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 63, assets/stylesheets/layout/_core.scss */
+/* line 66, assets/stylesheets/layout/_core.scss */
 .close:before {
   content: "x";
 }
