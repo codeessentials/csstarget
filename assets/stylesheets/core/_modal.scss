@@ -10,5 +10,5 @@
 }
 
 // Animations style
-#one {  }
-#one {  }
+#bounce:target { @include animation( bounce 1s ); }
+#two:target { @include animation( bounce 1s ); }
